@@ -7,7 +7,7 @@
 * nvim (with plugins)
 * updated screenshot util
 * kitty
-* fonts (including japanese ones)
+* fonts (including nerd-fonts, japanese, whatever's in my configs)
 * fcitx5
 * ranger
 * polybar
