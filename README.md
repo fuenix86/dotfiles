@@ -13,3 +13,5 @@
 * polybar
 * rofi
 * keepassxc
+* lightdm
+* gtk config
