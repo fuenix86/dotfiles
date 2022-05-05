@@ -19,6 +19,7 @@
 | Shell      | bash              |
 | Editor     | neovim            |
 | Compositor | none!             |
+I like having a long long battery life :)
 
 ### Install the fonts
 + **FiraCode Nerd Font** - [here](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete%20Mono.ttf)
