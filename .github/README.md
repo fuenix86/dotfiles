@@ -10,15 +10,20 @@
     <img src="rice.png" alt="Rice Preview">
 </div>
 
+### 👋 Hi there
+These are my Linux config files. I've been using i3 for a while now, and I think over time I've built a pretty unique rice with some nice theming. Hope you enjoy
+
+<h2></h2><br>
+
 ### Features
 | Programs   | Using             |
 | ---------- | ----------------- |
 | WM         | i3                |
-| OS         | fedora            |
-| Terminal   | kitty             |
-| Shell      | bash              |
-| Editor     | neovim            |
-| Compositor | none!             |
+| OS         | Fedora            |
+| Terminal   | Kitty             |
+| Shell      | Bash              |
+| Editor     | Neovim            |
+| Compositor | None!             |
 
 I like having a long long battery life :)
 
