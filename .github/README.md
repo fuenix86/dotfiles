@@ -19,6 +19,7 @@
 | Shell      | bash              |
 | Editor     | neovim            |
 | Compositor | none!             |
+
 I like having a long long battery life :)
 
 ### Install the fonts
