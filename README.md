@@ -10,6 +10,8 @@
 * fonts (including nerd-fonts, japanese, whatever's in my configs)
   * Ac437 NEC Multispeed, Ac437 NEC Multispeed Bold
   * OperatorMonoBookItalic
+  * FiraCode Nerd Font
+  * SourceHanSansJP-Regular
 * fcitx5
 * ranger
 * polybar
