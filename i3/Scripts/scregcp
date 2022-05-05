@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 # screenshots stuff
-# TODO: docs
 
 function help_and_exit {
     if [ -n "${1}" ]; then

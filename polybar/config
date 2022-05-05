@@ -1,0 +1,171 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+[colors]
+#background = #aa2F343F
+#background-alt = #3306080a
+background = #aa282c34
+background-alt = #aa61afef
+
+primary = #fff
+alert = #e06c75
+
+[bar/top]
+bottom = false
+monitor = eDP-1
+
+background = ${colors.background}
+
+border-size = 0
+border-color = #00000000
+
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = FiraCode Nerd Font:size=11;1
+font-1 = SourceHanSansJP-Regular:size=11;1
+
+modules-left = i3 spotify 
+modules-center = date
+modules-right = wlan xkeyboard battery-combined-udev pulseaudio
+
+wm-restack = i3
+
+[bar/top_secondary]                                                                            
+bottom = false
+monitor = DP-1
+
+background = ${colors.background}
+
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 1                                                                        
+
+font-0 = FiraCode Nerd Font:size=10;1                                                          
+modules-left = i3                                                                              
+                                                                                               
+wm-restack = i3                                                                                
+                                                                                               
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:40:...%
+
+[module/spotify]
+type = custom/script
+interval = 30
+format-prefix = "ﱘ "
+format = <label>
+exec = python ~/.config/polybar/scripts/spotify_status.py -f '{artist} - {song}'
+format-underline = #1db954
+;control players (optional)
+click-left = playerctl --player=spotify play-pause 
+click-right = playerctl --player=spotify next 
+click-middle = playerctl --player=spotify previous 
+
+[module/i3]
+type = internal/i3
+pin-workspaces = true
+index-sort = true
+enable-click = false
+enable-scroll = true 
+wrapping-scroll = false
+reverse-scroll = false
+fuzzy-match = false
+
+label-focused = %index%
+label-focused-padding = 1
+label-focused-foreground = ${colors.primary} 
+label-focused-background = ${colors.background-alt}
+
+label-unfocused = %index%
+label-unfocused-padding = 1
+label-unfocused-foreground = ${colors.primary} 
+label-unfocused-background = ${colors.background}
+
+label-urgent = %index%
+label-urgent-foreground = ${colors.primary}
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+
+[module/wlan]
+type = internal/network
+interface = wlp3s0
+interval = 3.0
+
+format-connected = 直 <label-connected>
+label-connected = %essid%
+
+format-disconnected = 睊
+
+[module/date]
+type = internal/date
+interval = 1.0
+
+date = " %a %b %d"
+date-alt = " %a %b %d"
+
+time = %I:%M:%S
+time-alt = %H:%M:%S
+
+format-prefix = 
+format-prefix-foreground = ${colors.primary}
+
+label = %date% %time%
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+use-ui-max = false
+
+format-volume = <ramp-volume> <label-volume> 
+
+label-muted = ﱝ 
+label-muted-foreground = #666
+
+ramp-volume-0 = 奄
+ramp-volume-1 = 奔
+ramp-volume-2 = 墳
+
+[module/battery-combined-udev]
+type = custom/script
+exec = ~/.config/polybar/scripts/battery-combined-udev.sh
+tail = true
+
+[module/xkeyboard]
+type = internal/xkeyboard
+format = <label-layout>
+format-spacing = 0
+
+blacklist-0 = num lock
+blacklist-1 = scroll lock 
+
+label-layout = %name%
+label-laybout-padding = 2
+label-indicator = %name%
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+[settings]
+screenchange-reload = true
+
+; vim:ft=dosini
