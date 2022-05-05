@@ -8,6 +8,8 @@
 * updated screenshot util
 * kitty
 * fonts (including nerd-fonts, japanese, whatever's in my configs)
+  * Ac437 NEC Multispeed, Ac437 NEC Multispeed Bold
+  * OperatorMonoBookItalic
 * fcitx5
 * ranger
 * polybar
