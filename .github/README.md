@@ -6,6 +6,10 @@
 
 <h2></h2><br>
 
+<div align="center">
+    <img src="rice.png" alt="Rice Preview">
+</div>
+
 ### Features
 | Programs   | Using             |
 | ---------- | ----------------- |
