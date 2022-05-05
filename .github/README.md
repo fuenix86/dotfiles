@@ -1,8 +1,11 @@
 <h2></h2><br>
+
 <p align="center">
     <b>fuenix86's Linux configuration files</b>
 </p>
+
 <h2></h2><br>
+
 ### Features
 | Programs   | Using             |
 | ---------- | ----------------- |
