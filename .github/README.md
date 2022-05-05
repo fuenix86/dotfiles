@@ -23,7 +23,7 @@
 I like having a long long battery life :)
 
 ### Install the fonts
-+ **FiraCode Nerd Font** - [here](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete%20Mono.ttf)
-+ **Ac437 NEC Multispeed** - [here](https://int10h.org/oldschool-pc-fonts/fontlist/font?nec_multispeed)
-+ **Operator Mono Book Italic** - [here](https://fontsfree.net/operator-mono-book-italic-2-font-download.html)
-+ **Source Han Sans JP** - [here](https://pkgs.org/search/?q=sourcehans)
++ **[FiraCode Nerd Font](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete%20Mono.ttf)**
++ **[Ac437 NEC Multispeed](https://int10h.org/oldschool-pc-fonts/fontlist/font?nec_multispeed)**
++ **[Operator Mono Book Italic](https://fontsfree.net/operator-mono-book-italic-2-font-download.html)**
++ **[Source Han Sans JP](https://pkgs.org/search/?q=sourcehans)**
