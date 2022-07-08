@@ -32,6 +32,3 @@ I like having a long long battery life :)
 + **[Ac437 NEC Multispeed](https://int10h.org/oldschool-pc-fonts/fontlist/font?nec_multispeed)**
 + **[Operator Mono Book Italic](https://fontsfree.net/operator-mono-book-italic-2-font-download.html)**
 + **[Source Han Sans JP](https://pkgs.org/search/?q=sourcehans)**
-
-### Install the programs
-WIP
